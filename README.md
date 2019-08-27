@@ -1,1 +1,1 @@
-# GTK+ builder
+# GTK+ 3 builder
