@@ -3,19 +3,19 @@
 using BinaryBuilder
 
 name = "GTK+"
-version = v"3.94.0"
+version = v"3.24.10"
 
 # Collection of sources required to build FFMPEG
 sources = [
-    "https://download.gnome.org/sources/gtk+/3.94/gtk+-3.94.0.tar.xz" =>
-    "a947caa5296610b0f1d7a03b58df34765c227c577c78e683e75eea3251a67035",
+    "https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.10.tar.xz" =>
+    "35a8f107e2b90fda217f014c0c15cb20a6a66678f6fd7e36556d469372c01b03",
 ]
 
 # Bash recipe for building across all platforms
 # TODO: Theora and Opus once their releases are available
 script = raw"""
 cd $WORKSPACE/srcdir
-cd gtk+-3.94.0/
+cd gtk+-$(version)/
 ./configure --prefix=$prefix --extra-cflags="-I${prefix}/include" --extra-ldflags="-L${prefix}/lib"
 make -j${nproc}
 make install
