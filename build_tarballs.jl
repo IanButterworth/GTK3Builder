@@ -5,7 +5,6 @@ using BinaryBuilder
 name = "GTK+"
 version = v"3.24.10"
 
-# Collection of sources required to build FFMPEG
 sources = [
     "https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.10.tar.xz" =>
     "35a8f107e2b90fda217f014c0c15cb20a6a66678f6fd7e36556d469372c01b03",
