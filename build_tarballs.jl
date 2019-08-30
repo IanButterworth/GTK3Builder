@@ -39,13 +39,14 @@ dependencies = [
     # The GdkPixbuf library provides facilities for loading images in a variety of file formats.
 
     # Pango is a library for internationalized text handling.
-    "https://github.com/giordano/PangoBuilder/releases/download/v1.42.4/build_Pango.v1.42.4.jl"
-    ### NOT ALL PLATFORMS
+    "https://github.com/giordano/PangoBuilder/releases/download/v1.42.4/build_Pango.v1.42.4.jl",
 
     # ATK is the Accessibility Toolkit. It provides a set of generic interfaces allowing accessibility technologies such as screen readers to interact with a graphical user interface.
 
     # Gobject Introspection is a framework for making introspection data available to language bindings.
     ### May be satisfied via the GLib build...
+
+    "https://github.com/JuliaPackaging/Yggdrasil/releases/download/FriBidi-v1.0.5%2B0/build_FriBidi.v1.0.5.jl"
 
 ]
 
